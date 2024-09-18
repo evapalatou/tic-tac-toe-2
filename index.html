@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Meta tags for search engines-->
+    <meta name="description" content="Tic Tac Toe online game written in Javascript, suitable for two players">
+    <meta name="keywords" content="game, javascript, tic tac toe, oldschool, two-player game, fun, entertainment">
+    <meta name="author" content="Evanthia Palatou">
     <title>Start Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        body {
-            display: flex;
+           body {
+            /*display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #f7f7f7;
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif;*/
+            padding: 0 10%;
+            background-color: #111;
+            color: #FFF;
+            font-family: "Open Sans", sans-serif;
+            font-size: 2em;
+            line-height: 100vh;
+            white-space: nowrap;
         }
+
+        span {
+            display:block;
+            position:inherit;
+            padding: 0px;
+        }
+
         .start-container {
             text-align: center;
             padding: 20px;
@@ -35,15 +53,31 @@
         .start-button:hover {
             background-color: #0056b3;
         }
+        .blinking-cursor {
+             user-select: none;
+             animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+          to {
+            visibility: hidden;
+          }
+        }
     </style>
 </head>
 <body>
-    <div class="start-container">
+    <!--<div class="start-container">
         <h1>Welcome to Tic-Tac-Toe</h1>
         <p>Click the button below to start playing!</p>
         <a href="game.html">
             <button class="start-button">Start Game</button>
         </a>
-    </div>
+    </div>-->
+    <p><span is="type-async" id="type-text">...</span></p>
+    <p><span class="blinking-cursor">_</span></p> <br><br>
+    <p><a href="game.html"><button class="start-button">Start Game</button></a></p>
+    <!--<footer>
+        <p>&copy; 2024 Tic-Tac-Toe Game. All Rights Reserved.</p>
+    </footer>-->
 </body>
+<script src="assets/js/welcome.js"></script>
 </html>
