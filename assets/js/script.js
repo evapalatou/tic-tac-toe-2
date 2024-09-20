@@ -1,19 +1,19 @@
-// Sound effects for each movement, the win condition and the draw
+// Sound effects
 const moveSound = new Audio('assets/sounds/move.mp3');
 const winSound = new Audio('assets/sounds/win.mp3');
 const drawSound = new Audio('assets/sounds/draw.mp3');
 
-// we use the following let variables for:
-let board = ['', '', '', '', '', '', '', '', '']; // empty board 
-let currentPlayer = 'X'; // active player, always X starts first
-let gameActive = true; // checks the game's status
-let scoreX = 0; // X's score
-let scoreO = 0; // O's score
-let isMuted = false; // Variable to track the current mute state
+let board = ['', '', '', '', '', '', '', '', ''];
+let currentPlayer = 'X';
+let gameActive = true;
+let scoreX = 0;
+let scoreO = 0;
+let isMuted = false; // Variable to track mute state
 
-const statusDisplay = document.getElementById('status'); // dynamic game board
-const scoreXDisplay = document.getElementById('scoreX'); // stores X's total score
-const scoreODisplay = document.getElementById('scoreO'); // stores O's total score
+const statusDisplay = document.getElementById('status');
+const scoreXDisplay = document.getElementById('scoreX');
+const scoreODisplay = document.getElementById('scoreO');
+const muteButton = document.getElementById('muteButton'); // Mute/Unmute button
 const winningConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -25,9 +25,15 @@ const winningConditions = [
     [2, 4, 6]
 ];
 
-/** A function that handles a cell click and takes as a parameter an event,
-* checks whether a cell is empty or not in order to decide the game activity status. 
-*/
+// Toggle mute/unmute
+muteButton.addEventListener('click', toggleMute);
+
+function toggleMute() {
+    isMuted = !isMuted; // Toggle mute state
+    muteButton.textContent = isMuted ? 'Unmute' : 'Mute'; // Update button text
+}
+
+// Handle a cell click
 function handleCellClick(event) {
     const clickedCellIndex = event.target.getAttribute('data-index');
 
@@ -35,16 +41,16 @@ function handleCellClick(event) {
         return;
     }
 
-    // Play move sound
-    moveSound.play();
+    // Play move sound if not muted
+    if (!isMuted) {
+        moveSound.play();
+    }
 
     updateBoard(clickedCellIndex);
     checkForWinner();
 }
 
-/** Update the board function uses the ternary operator to decide player's turn is to mark the board.
-* 
-*/
+// Update the board
 function updateBoard(index) {
     board[index] = currentPlayer;
     document.querySelector(`[data-index="${index}"]`).innerText = currentPlayer;
@@ -70,7 +76,9 @@ function checkForWinner() {
         highlightWinningCells(winningCells);
         gameActive = false;
         statusDisplay.innerText = `Player ${currentPlayer === 'X' ? 'O' : 'X'} wins!`;
-        winSound.play();
+        if (!isMuted) {
+            winSound.play();
+        }
         updateScore(currentPlayer === 'X' ? 'O' : 'X');
         return;
     }
@@ -78,7 +86,9 @@ function checkForWinner() {
     if (!board.includes('')) {
         statusDisplay.innerText = 'Draw!';
         gameActive = false;
-        drawSound.play();
+        if (!isMuted) {
+            drawSound.play();
+        }
     }
 }
 
@@ -121,12 +131,7 @@ function newGame() {
     scoreODisplay.innerText = scoreO;
 }
 
-// Add event listeners
+// Event listeners for game control
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 document.getElementById('reset').addEventListener('click', resetGame);
 document.getElementById('newGame').addEventListener('click', newGame);
-// Add event listener to the mute button
-document.getElementById('muteButton').addEventListener('click', toggleMute);
-
-// Initialize status
-statusDisplay.innerText = `It's ${currentPlayer}'s turn`;
