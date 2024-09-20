@@ -236,7 +236,7 @@ footer {
     color: #f0f0f0;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .grid {
         grid-template-columns: repeat(3, 80px);
         grid-template-rows: repeat(3, 80px);
@@ -249,7 +249,7 @@ footer {
     .container {
         width: 90%;
     }
-}
+}*/
 
 @media (max-width: 480px) {
     .grid {
