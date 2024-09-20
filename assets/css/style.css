@@ -168,6 +168,25 @@ h1 {
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.grid {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.modal-content {
+    animation: fadeIn 1s ease-in-out;
+}
+
 .status {
     font-size: 1.2rem;
     margin-bottom: 20px;
@@ -180,18 +199,23 @@ h1 {
 }
 
 button {
-    padding: 10px 15px;
-    font-size: 1rem;
-    cursor: pointer;
+    padding: 12px 25px;
+    font-size: 1.1rem;
     border: none;
-    background-color: #ae9da9;
+    background-color: #7e4b8b;
     color: white;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #aaaaaa;
+    background-color: #d982b5;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
 }
 
 /*#muteButton {
