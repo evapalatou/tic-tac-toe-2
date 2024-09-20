@@ -16,6 +16,24 @@
     <title>Advanced Tic Tac Toe</title>
 </head>
 <body>
+    <!-- Modal for Game Instructions -->
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome to Tic Tac Toe</h2>
+            <p>Welcome to the classic Tic Tac Toe game! Here’s how to play:</p>
+            <ul>
+                <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+                <li>Player X always goes first.</li>
+                <li>Players take turns placing their mark (X or O) in empty cells.</li>
+                <li>The first player to get 3 of their marks in a row (vertically, horizontally, or diagonally) wins!</li>
+                <li>If all 9 squares are filled and no player has 3 marks in a row, the game ends in a draw.</li>
+                <li>Click "New Game" to reset the score or "Reset Game" to restart without resetting the score.</li>
+                <li>You can mute/unmute sound effects using the button at the bottom.</li>
+            </ul>
+            <button id="closeModalBtn">Start Game</button>
+        </div>
+    </div>
     <header>
         <a href="index.html">
             <h1 id="heading">Tic Tac Toe</h1> 
@@ -62,6 +80,7 @@
     <footer>
         <p>&copy; Evanthia Palatou 2024 <a href=""><i class="fa-brands fa-linkedin"></i></a> <a href=""><i class="fa-brands fa-github"></i></a></p>
     </footer>
+    <script src="assets/js/modal.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
