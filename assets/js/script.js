@@ -8,7 +8,11 @@ let currentPlayer = 'X';
 let gameActive = true;
 let scoreX = 0;
 let scoreO = 0;
-let isMuted = false; // Variable to track mute state
+// Initially mute all sounds
+moveSound.muted = true;
+winSound.muted = true;
+drawSound.muted = true;
+let isMuted = true; // Audio is muted by default
 
 const statusDisplay = document.getElementById('status');
 const scoreXDisplay = document.getElementById('scoreX');
@@ -26,11 +30,17 @@ const winningConditions = [
 ];
 
 // Toggle mute/unmute
-muteButton.addEventListener('click', toggleMute);
-
 function toggleMute() {
-    isMuted = !isMuted; // Toggle mute state
-    muteButton.textContent = isMuted ? 'OFF' : 'ON'; // Update button text
+    isMuted = !isMuted;
+
+    // Toggle the muted property for each sound effect
+    moveSound.muted = isMuted;
+    winSound.muted = isMuted;
+    drawSound.muted = isMuted;
+
+    // Update the mute button icon based on the state
+    const muteButton = document.getElementById('muteButton');
+    muteButton.innerHTML = isMuted ? '🔇' : '🔊'; // Use different icons for mute/unmute
 }
 
 // Handle a cell click
@@ -135,3 +145,5 @@ function newGame() {
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
 document.getElementById('reset').addEventListener('click', resetGame);
 document.getElementById('newGame').addEventListener('click', newGame);
+// Attach event listener to the mute/unmute button
+document.getElementById('muteButton').addEventListener('click', toggleMute);

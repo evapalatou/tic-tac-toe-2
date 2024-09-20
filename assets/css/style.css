@@ -130,6 +130,7 @@ h1 {
     grid-template-rows: repeat(3, 100px);
     gap: 10px;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .cell {
@@ -255,6 +256,7 @@ footer {
     .grid {
         grid-template-columns: repeat(3, 60px);
         grid-template-rows: repeat(3, 60px);
+        justify-content: center;
     }
 
     .cell {
