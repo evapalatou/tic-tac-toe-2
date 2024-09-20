@@ -40,7 +40,7 @@ function toggleMute() {
 
     // Update the mute button icon based on the state
     const muteButton = document.getElementById('muteButton');
-    muteButton.innerHTML = isMuted ? '🔇' : '🔊'; // Use different icons for mute/unmute
+    muteButton.innerHTML = isMuted ? '<i class="fa-solid fa-volume-xmark"></i>' : '<i class="fa-solid fa-volume-high"></i>'; // Use different icons for mute/unmute
 }
 
 // Handle a cell click
