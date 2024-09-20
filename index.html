@@ -45,22 +45,45 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .start-button {
-            background-color: #ae9da9;
-            border: none;
-            color: #fbf1f9;
-            padding: 15px 30px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            position: fixed;
-            top: 60%;
-            left: 44%;
-        }
-        .start-button:hover {
-            background-color: #aaaaaa;
-        }
+    background-color: #ae9da9;
+    border: none;
+    color: #fbf1f9;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 60%;
+    left: 44%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #d982b5;
+    transform: scale(1.1);
+}
+
+#type-text {
+    font-size: 2em;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid;
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+/*@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+        }*/
         .blinking-cursor {
              user-select: none;
              animation: blink 1s steps(2, start) infinite;
@@ -70,6 +93,12 @@
             visibility: hidden;
           }
         }
+
+        @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
     </style>
     <title>Start Tic-Tac-Toe</title>
 </head>

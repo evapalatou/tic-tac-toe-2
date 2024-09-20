@@ -30,7 +30,7 @@ muteButton.addEventListener('click', toggleMute);
 
 function toggleMute() {
     isMuted = !isMuted; // Toggle mute state
-    muteButton.textContent = isMuted ? 'Unmute' : 'Mute'; // Update button text
+    muteButton.textContent = isMuted ? 'OFF' : 'ON'; // Update button text
 }
 
 // Handle a cell click
