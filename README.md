@@ -48,6 +48,13 @@ The project utilizes the Kanit and Roboto font families for typography, providin
 - Lighthouse Used for checking the score for the page through Google Chrome's dev tools on incognito mode
 
 # Testing 
+### Browser Compatibility
+### Responsiveness
+### Code Validation
+No errors or warnings were found when passing through the official W3C validator (HTML and CSS)
+- For the index.html check <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Findex.html" target="_blank">here!</a>
+- For the page.html check <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Fgame.html" target="_blank">here!</a>
+
 # Deployment
 # Credits
 
