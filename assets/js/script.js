@@ -31,7 +31,8 @@ const winningConditions = [
 
 /**
  * This functions toggles between mute and unmute. 
- * Game's default audio setting is mute
+ * Game's default audio is currently set to mute as the best UX practice
+ * Click the audio button to activate the sound effects.
  */
 function toggleMute() {
     isMuted = !isMuted;
