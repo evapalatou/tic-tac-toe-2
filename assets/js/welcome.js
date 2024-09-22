@@ -1,3 +1,8 @@
+/** 
+ * Initialize function with default text and cursor.
+ * The function waits for 1000 and then the text alters
+ * according to the node strings below
+*/
 async function init() {
   const node = document.querySelector("#type-text");
 
@@ -18,7 +23,15 @@ async function init() {
   }
 }
 
-// Source code 🚩
+/** 
+ * Source code is originally taken from codepen website. 
+ * Credits to Luciano Felix.
+ * Here you can visit the original code of the effect
+ * https://codepen.io/FelixLuciano/pen/PoqdMKP
+ * I customized the code so that it fits to my website
+ * Below you may find the main code with time intervals, type text, etc.
+ * Enjoy!
+*/
 
 const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));
 
