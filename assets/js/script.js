@@ -48,7 +48,9 @@ function toggleMute() {
 
 /** 
  * This function handles a cell click. 
- * It checks the condition of whether the cell is e
+ * It checks the condition of whether the cell is full or the game is active in order to place a mark
+ * Also, plays a sound effect in case the audio is not muted, updates the game board and checks the winning conditions
+ *  
 */
 function handleCellClick(event) {
     const clickedCellIndex = event.target.getAttribute('data-index');
@@ -61,12 +63,17 @@ function handleCellClick(event) {
     if (!isMuted) {
         moveSound.play();
     }
-
+    // Updates the game board
     updateBoard(clickedCellIndex);
+    // Checks for the winning conditions
     checkForWinner();
 }
 
-// Update the board
+/**
+ * This function updates the game board.
+ * Initially, starts with X player and then decides who is the current player.
+ * A message is displayed under the game board with player's turn (X or O)
+ */
 function updateBoard(index) {
     board[index] = currentPlayer;
     document.querySelector(`[data-index="${index}"]`).innerText = currentPlayer;
