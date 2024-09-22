@@ -165,7 +165,12 @@ function resetGame() {
     statusDisplay.innerText = `It's ${currentPlayer}'s turn`;
 }
 
-// Start a new game (resets scores too)
+/**
+ * This function starts a new game and also resets scores too.
+ * When the two players decide that they want to start a new round,
+ * one might press the 'New Board' button.
+ * Both scores are set to zero, and the displayed message on the console is updated too.
+ */
 function newGame() {
     resetGame();
     scoreX = 0;
