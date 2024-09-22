@@ -121,7 +121,11 @@ function checkForWinner() {
     }
 }
 
-// Highlight the winning cells
+/**
+ * This function is used to highlight the winning cells.
+ * It operates like a javascript animation that indicates which winning combination is met
+ * It becomes active ONLY when one of the winning conditions is met.
+ */
 function highlightWinningCells(winningCells) {
     winningCells.forEach(index => {
         document.querySelector(`[data-index="${index}"]`).classList.add('winning');
