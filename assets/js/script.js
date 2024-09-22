@@ -132,7 +132,12 @@ function highlightWinningCells(winningCells) {
     });
 }
 
-// Update the score
+/**
+ * This function updates the score by checking who is the winner.
+ * A relevant message is displayed on the top of the game board.
+ * If X player wins, the particular function updates the score by 1,
+ * otherwise player O gets 1 point. In case of draw the score remains untouched.
+ */
 function updateScore(winner) {
     if (winner === 'X') {
         scoreX++;
