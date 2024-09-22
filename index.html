@@ -21,9 +21,12 @@
             color: #fbf1f9;
             font-family: "Open Sans", sans-serif;
             font-size: 2em;
-            line-height: 100vh;
             white-space: nowrap;
-            overflow-y: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .start-container {
@@ -86,7 +89,7 @@
 <body>
     <p><span is="type-async" id="type-text">...</span></p>
     <p><span class="blinking-cursor">_</span></p>
-    <p><button class="start-button" onclick="location.href='game.html'">Start Game</button></p>
+    <button class="start-button" onclick="location.href='game.html'">Start Game</button>
     <script src="assets/js/welcome.js"></script>
 </body>
 </html>

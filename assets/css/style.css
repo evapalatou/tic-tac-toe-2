@@ -30,13 +30,6 @@ h1 {
     color: white;
 }
 
-
-
-
-
-
-
-
 /* Modal styling */
 .modal {
     display: none; /* Hidden by default */
@@ -102,16 +95,6 @@ h1 {
 #closeModalBtn:hover {
     background-color: #ae9da9;
 }
-
-
-
-
-
-
-
-
-
-
 
 .scoreboard {
     display: flex;
@@ -218,13 +201,6 @@ button:hover {
 button:active {
     transform: translateY(1px);
 }
-
-/*#muteButton {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    font-size: 14px;
-}*/
 
 footer {
     position: fixed;
