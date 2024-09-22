@@ -1,7 +1,7 @@
 // Modal handling for the welcome instructions
 window.onload = function() {
-    const modal = document.getElementById("welcomeModal");
-    const closeModalBtn = document.getElementById("closeModalBtn");
+    const modal = document.getElementById("welcome-modal");
+    const closeModalBtn = document.getElementById("close-modal-btn");
     const spanClose = document.getElementsByClassName("close")[0];
 
     // Show modal when page loads

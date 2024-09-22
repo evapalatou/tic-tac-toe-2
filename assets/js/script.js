@@ -29,7 +29,10 @@ const winningConditions = [
     [2, 4, 6]
 ];
 
-// Toggle mute/unmute
+/**
+ * This functions toggles between mute and unmute. 
+ * Game's default audio setting is mute
+ */
 function toggleMute() {
     isMuted = !isMuted;
 
@@ -43,7 +46,10 @@ function toggleMute() {
     muteButton.innerHTML = isMuted ? '<i class="fa-solid fa-volume-xmark"></i>' : '<i class="fa-solid fa-volume-high"></i>'; // Use different icons for mute/unmute
 }
 
-// Handle a cell click
+/** 
+ * This function handles a cell click. 
+ * It checks the condition of whether the cell is e
+*/
 function handleCellClick(event) {
     const clickedCellIndex = event.target.getAttribute('data-index');
 
