@@ -10,6 +10,7 @@ body {
     margin: 0;
 }
 
+/* stylization id for the index.html page */
 #style {
     padding: 0 10%;
     background-color: #7e4b8b;
@@ -25,6 +26,7 @@ body {
     justify-content: center;
 }
 
+/* stylize start button in index.html page */
 .start-button {
     background-color: #ae9da9;
     border: none;
@@ -51,12 +53,14 @@ body {
     animation: blink 1s steps(2, start) infinite;
 }
 
+/* animations in index.html page */
 @keyframes blink {
     to {
         visibility: hidden;
     }
 }
 
+/* game board container */
 .container {
     text-align: center;
     max-width: 600px;
@@ -154,6 +158,7 @@ h1 {
     color: #444;
 }
 
+/* square cells area */
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -181,6 +186,7 @@ h1 {
     background-color: #e0c4e4;
 }
 
+/* winning condition highlight */
 .cell.winning {
     background-color: #ffd700;
     border-color: #ff5722;
