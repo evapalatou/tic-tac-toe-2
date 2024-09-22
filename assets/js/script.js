@@ -81,7 +81,13 @@ function updateBoard(index) {
     statusDisplay.innerText = `It's ${currentPlayer}'s turn`;
 }
 
-// Check for a winner or draw
+/**
+ * This function checks if there is a winner or draw.
+ * We implement a for loop to find the winning condition.
+ * When the winning condition is met the loop breaks.
+ * In any other case, we use if conditions to decide which player is winning and the game tracks each player's moves.\
+ * If there is no empty cell left, and the winning condition is not met, THEN it is a draw!
+ */
 function checkForWinner() {
     let roundWon = false;
     let winningCells = [];
