@@ -1,7 +1,12 @@
-// Modal handling for the welcome instructions
+/**
+ * This function (Modal) is handling the welcome instructions.
+ * It shows the modal when the page loads, after the index.html page.
+ * You have the option to click the 'Start game' button or 'X' to close the modal,
+ * If someone clicks anywhere outside the modal, it closes as well.
+ */
 window.onload = function() {
-    const modal = document.getElementById("welcome-modal");
-    const closeModalBtn = document.getElementById("close-modal-btn");
+    const modal = document.getElementById("welcomeModal");
+    const closeModalBtn = document.getElementById("closeModalBtn");
     const spanClose = document.getElementsByClassName("close")[0];
 
     // Show modal when page loads
