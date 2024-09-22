@@ -148,7 +148,12 @@ function updateScore(winner) {
     }
 }
 
-// Reset the game
+/**
+ * This function resets the game board by clicking the Refresh button.
+ * After a winning condition is met, or there is a game draw,
+ * the two players might want to continue playing without losing the overall score.
+ * In order to continue playing, you need to push the 'Refresh' button
+ */
 function resetGame() {
     board = ['', '', '', '', '', '', '', '', ''];
     gameActive = true;
