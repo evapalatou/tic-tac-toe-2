@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,80 +12,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/14177f3035.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        body {
-            padding: 0 10%;
-            background-color: #7e4b8b;
-            background: linear-gradient(135deg, #7e4b8b, #d982b5);
-            color: #fbf1f9;
-            font-family: "Open Sans", sans-serif;
-            font-size: 2em;
-            white-space: nowrap;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .start-container {
-            text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: #e9ecef;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .start-button {
-            background-color: #ae9da9;
-            border: none;
-            color: #fbf1f9;
-            padding: 15px 30px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            position: fixed;
-            top: 60%;
-            left: 44%;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-
-        .start-button:hover {
-            background-color: #d982b5;
-            transform: scale(1.1);
-        }
-
-        .blinking-cursor {
-            user-select: none;
-            animation: blink 1s steps(2, start) infinite;
-        }
-
-        @keyframes blink {
-            to {
-                visibility: hidden;
-            }
-        }
-
-        @keyframes gradientAnimation {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-    </style>
     <title>Start Tic-Tac-Toe</title>
 </head>
-
-<body>
+<body id="style">
     <p><span is="type-async" id="type-text">...</span></p>
     <p><span class="blinking-cursor">_</span></p>
     <button class="start-button" onclick="location.href='game.html'">Start Game</button>
