@@ -130,6 +130,6 @@ Errors are fixed!
 2. From the Code and Automation dropdown menu select Pages
 3. Select the branch to be main and the folder to be /root
 4. Then, click save
-5. Follow the <a href="evapalatou.github.io/tic-tac-toe-2" target="_blank">deployed link</a> to the website
+5. Follow the <a href="https://evapalatou.github.io/tic-tac-toe-2/" target="_blank">deployed link</a> to the website
 # Credits
 
