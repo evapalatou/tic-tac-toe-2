@@ -28,24 +28,31 @@ The project contains three audio files taken from the <a href="https://pixabay.c
 ![Sound effects](documentation/sound-effects.png)
 
 # Features
+### Type text animation
 The welcome index.html page includes a type text animation with instructions and suggestions about the game. The user has to click the 'Start Game' button in order to redirect to the main game.html page. 
 ![Feature 1](documentation/feature-1.png)
 
+### Modal window
 The game loads automatically the second feature of the application, which is a modal that includes detailed instructions for the users. In order to exit the modal, the users have to click either the 'X' symbol and the 'Start Game' button, or click anywhere in the area outside of the modal.
 ![Feature 2](documentation/feature-2.png)
 
+### Score Area
 The score area displays the current round's game score and it is constantly updating. Here it is provided information about the score for the player X and player O.
 ![Feature 3](documentation/feature-3.png)
 
+### Game Board 3x3 grid
 The game board feature, which is a nine square cells grid and here the actual game takes place. It is important to pinpoint the hover effect and the winning condition animation that make the visual design of the game more interesting.
 ![Feature 4](documentation/feature-4.png)
 
+### Animated Buttons
 The three buttons area feature includes the buttons shown below that play a crucial role for the game process. i) the 'Refresh' button updates the game board after a game round is finished, ii) the 'New Board' button starts a new round, thus, sets all scores to zero, and iii) the audio icon button, which is set by default to mute. Players may easily toggle between mute/unmute condition. 
 ![Feature 5](documentation/feature-5.png)
 
+### Footer
 The footer feature which includes information about the creator of the game and links to social media channels.
 ![Feature 6](documentation/feature-6.png)
 
+### Error 404 Page
 The 404.html page which acts as the "border" of the website for when the user clicks on something broken, then he can simply click to go back to the homepage.
 ![Feature 7](documentation/404.png)
 
@@ -131,5 +138,22 @@ Errors are fixed!
 3. Select the branch to be main and the folder to be /root
 4. Then, click save
 5. Follow the <a href="https://evapalatou.github.io/tic-tac-toe-2/" target="_blank">deployed link</a> to the website
+
 # Credits
+- Some ideas about code were taken and learned for the tic-tac-toe game: 
+<a href="https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/" target="_blank">tutorial 1</a>, 
+<a href="https://codebrainer.com/blog/tic-tac-toe-javascript-game" target="_blank">tutorial 2</a>,
+<a href="https://www.thatsoftwaredude.com/content/6189/step-by-step-guide-to-coding-tic-tac-toe-in-javascript" target="_blank">tutorial 3</a>,
+<a href="https://hackr.io/blog/how-to-build-tic-tac-toe-in-javascript" target="_blank">tutorial 4</a>,
+<a href="https://www.tutorjoes.in/JS_tutorial/tic_tac_toe_in_js" target="_blank">tutorial 5</a>
+- Video tutorials for tic-tac-toe game: <a href="https://www.youtube.com/@BroCodez" target="_blank">Bro Code</a>, <a href="https://www.youtube.com/@DorsCodingSchool/videos" target="_blank">Dors Coding School</a>, <a href="https://www.youtube.com/@conorcoder7196/videos" target="_blank">Conor Coder</a>
+- Typewrite animation from Felix Luciano <a href="https://codepen.io/FelixLuciano/pen/PoqdMKP" target="_blank">Codepen website</a>
+- Lerning the CSS @keyframes Rule on <a href="https://www.w3schools.com/" target="_blank">W3School</a>
+- The icons in the footer were taken from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+- Audio effects were downloaded from <a href="https://pixabay.com/music/" target="_blank">Pixabay</a>
+- Troubleshooting: <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+
+# Acknowledgements
+- Iuliia Konovalova, my mentor.
+- Code Institute tutors and Slack community members for their support and help.
 
