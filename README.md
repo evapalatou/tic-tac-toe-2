@@ -110,6 +110,26 @@ No errors or warnings were found when passing through the official W3C validator
 | Footer Github | Click on the Github icon | The user is redirected to the Github page |
 | Error Page | Click on something that is broken | The user views the 404.html page and has the option to go back to the Welcome Page |
 
+### Lighthouse
+Using lighthouse in devtools, it is confirmed that the website is performing well and it is accessible.
+![Lighthouse](documentation/lighthouse-1.png)
+![Lighthouse](documentation/lighthouse-2.png)
+
+### Bugs
+Errors are fixed!
+
 # Deployment
+### Via Gitpod
+1. Go to your Cloud IDE <a href="https://codeinstitute-ide.net/workspaces" target="_blank">here!</a>
+2. Click the button 'New Workspace'
+3. Select your repository from the list e.g. tic tac toe 2
+4. Click Enter
+5. Your current repository can be found <a href="https://github.com/evapalatou/tic-tac-toe-2" target="_blank">here!</a>
+### Via Github pages
+1. In the GitHub repository, navigate to the Settings tab
+2. From the Code and Automation dropdown menu select Pages
+3. Select the branch to be main and the folder to be /root
+4. Then, click save
+5. Follow the <a href="evapalatou.github.io/tic-tac-toe-2" target="_blank">deployed link</a> to the website
 # Credits
 
