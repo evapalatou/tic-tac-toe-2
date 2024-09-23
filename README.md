@@ -18,7 +18,7 @@ The wireframes created in the Marvel App depict the final design and structure o
 ![Wireframes](documentation/wireframes.png)
 
 ### Color Scheme
-The color palette of the website is based on the generic gradient color scheme. Purple is used for the main background, cream white for the div containers, and pink, red, and yellow for highlighting purposes (i.e. buttons, links, hover effect)
+The color palette of the website is based on the generic gradient color scheme. Purple is used for the main background, cream white for the div containers, and pink, red, and yellow for highlighting purposes (i.e. buttons, links, hover effect) 
 ![Color Palette](documentation/palette.png)
 
 ### Typography
@@ -155,6 +155,7 @@ Errors are fixed!
 - The icons in the footer were taken from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
 - Audio effects were downloaded from <a href="https://pixabay.com/music/" target="_blank">Pixabay</a>
 - Troubleshooting: <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+- Color palette from the <a href="https://www.color-hex.com/" target="_blank">Color-Hex</a>
 
 # Acknowledgements
 - Iuliia Konovalova, my mentor.
