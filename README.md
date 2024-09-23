@@ -48,30 +48,44 @@ The footer feature which includes information about the creator of the game and 
 
 ### Future Improvements
 - Add a leaderboard with highest scores
-- Submit name of the player form
+- Submit form with the names of the players
 
 # Technologies 
 ### Languages
 - JavaScript - provides the biggest part of the functionality for the application.
-- HTML5 - provides the content and structure for the application.
-- CSS3 - provides the styling for the application.
+- HTML - provides the content and structure for the application.
+- CSS - provides the styling for the application.
 ### Other tools
-- Git Used for version control eg. git add - commit - push
-- Github Used as the hosting platform for the repository.
+- Git Used for version control. 
+- Github Used as the hosting platform for the code.
 - Github Pages Used for deploying the webpage.
 - Gitpod Used as the IDE for writing, editing and debugging code.
 - Favicon Used for generating the favicon.
 - Font awesome Used for the social icons in the footer.
 - Am I Responsive Used for checking the responsiveness of the website.
 - Lighthouse Used for checking the score for the page through Google Chrome's dev tools on incognito mode
+- Browserling online cross-browser testing
 
 # Testing 
 ### Browser Compatibility
+The website was tested on the following browsers: Chrome, Firefox, Opera
+
+Chrome
+![Chrome](documentation/browser-chrome.png)
+Safari
+![Firefox](documentation/browser-firefox.png)
+Opera
+![Opera](documentation/browser-opera.png)
+
 ### Responsiveness
+The website was checked both by devtools implemented in Chrome browser and the Responsinator Testing Tool (source: http://www.responsinator.com/)
+- For the index.html page check <a href="http://www.responsinator.com/?url=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2F" target="_blank">here!</a>
+- for the game.html page check <a href="http://www.responsinator.com/?url=evapalatou.github.io%2Ftic-tac-toe-2%2Fgame.html" target="_blank">here!</a>
+
 ### Code Validation
 No errors or warnings were found when passing through the official W3C validator (HTML and CSS)
 - For the index.html check <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Findex.html" target="_blank">here!</a>
-- For the page.html check <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Fgame.html" target="_blank">here!</a>
+- For the game.html check <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Fgame.html" target="_blank">here!</a>
 
 # Deployment
 # Credits
