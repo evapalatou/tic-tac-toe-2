@@ -1,4 +1,4 @@
-![Mockup](documentation/mockup3.png)
+![Mockup](documentation/mockup2.png)
 
 # Introduction
 Tic-tac-toe is a paper-and-pencil game for two players who take turns marking the spaces in a three-by-three grid with X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. It is a solved game, with a forced draw assuming the best play from both players. If tic-tac-toe were as simple as it seems, then why has it been around for over 3,000 years? The particular JavaScript version of the game has evolved a bit since the original version by letting two kids play online from their computers. From an educational point of view, this classic game contributes to children's development and growth in numerous ways, including their understanding of predictability, problem-solving, spatial reasoning, hand-eye coordination, turn-taking, and strategizing. The purpose of the project is to create a website called "Tic-tac-toe" that serves as an educational game and learning tool. The project aims to provide users with a trustworthy, safe, effective, and interactive platform. Two users are invited to follow the game instructions, then experiment, play for as long as they want, keep their scores, learn, and have fun. Moreover, the user interface UI is entertaining, free to play, and priceless to learn. <a href="https://evapalatou.github.io/tic-tac-toe-2" target="_blank">The website can be accessed HERE!</a>
@@ -12,26 +12,44 @@ The users of 'Tic-tac-toe' want to play a fun round of noughts and crosses that 
 
 # Design
 ### Wireframes
+The wireframes created in Marvel App depict the final design and structure of the website.
 ![Wireframes](documentation/wireframes.png)
-The wireframes created in Marvel App depict the final design and structure of the website
+
 ### Color Scheme
+The color palette of the website is based on the generic gradient color scheme. Purple is used for the main backfround, cream white for the div containers, and pink, red and yellow for highlighting purposes (i.e. buttons, links, hover effect)
 ![Color Palette](documentation/palette.png)
-The color palette of the website is based on the generic gradient color scheme. Dark and Lighter blue is used for the main content, whilst bright and soft orange for highlighting purposes (i.e. buttons, links, hover effect)
+
 ### Typography
+The project utilizes the Open Sans font family for typography. Open Sans is a humanist sans serif typeface designed by Steve Matteson, Type Director of Ascender Corp. Open Sans was designed with an upright stress, open forms and a neutral, yet friendly appearance. It was optimized for print, web, and mobile interfaces, and has excellent legibility characteristics in its letterforms. 
 ![Typography](documentation/typography.png)
 
-The project utilizes the Kanit and Roboto font families for typography, providing a clean and modern aesthetic. The color scheme incorporates shades of white, dark blue, and orange, enhancing readability and visual appeal.
 ### Audio
+The project contains three audio files taken from the <a href="https://pixabay.com/music/" target="_blank">pixabay website</a>. Audio effect enhance the overall gaming experience and make the application more interactive and entertaining. In particular, the default setting for music is set to mute, however if you choose to hear the audio, I provide audio effects specifically for the i) mark move, ii) the winning condition, iii) draw.
 ![Sound effects](documentation/sound-effects.png)
 
 # Features
+The welcome index.html page includes a type text animation with instructions and suggestions about the game. The user has to click the 'Start Game' button in order to redirect to the main game.html page. 
 ![Feature 1](documentation/feature-1.png)
+
+The game loads automatically the second feature of the application, which is a modal that includes detailed instructions for the users. In order to exit the modal, the users have to click either the 'X' symbol and the 'Start Game' button, or click anywhere in the area outside of the modal.
 ![Feature 2](documentation/feature-2.png)
+
+The score area displays the current round's game score and it is constantly updating. Here it is provided information about the score for the player X and player O.
 ![Feature 3](documentation/feature-3.png)
+
+The game board feature, which is a nine square cells grid and here the actual game takes place. It is important to pinpoint the hover effect and the winning condition animation that make the visual design of the game more interesting.
 ![Feature 4](documentation/feature-4.png)
+
+The three buttons area feature includes the buttons shown below that play a crucial role for the game process. i) the 'Refresh' button updates the game board after a game round is finished, ii) the 'New Board' button starts a new round, thus, sets all scores to zero, and iii) the audio icon button, which is set by default to mute. Players may easily toggle between mute/unmute condition. 
 ![Feature 5](documentation/feature-5.png)
+
+The footer feature which includes information about the creator of the game and links to social media channels.
 ![Feature 6](documentation/feature-6.png)
+
 ### Future Improvements
+- Add a leaderboard with highest scores
+- Submit name of the player form
+
 # Technologies 
 ### Languages
 - JavaScript - provides the biggest part of the functionality for the application.
