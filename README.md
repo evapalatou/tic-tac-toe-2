@@ -46,6 +46,9 @@ The three buttons area feature includes the buttons shown below that play a cruc
 The footer feature which includes information about the creator of the game and links to social media channels.
 ![Feature 6](documentation/feature-6.png)
 
+The 404.html page which acts as the "border" of the website for when the user clicks on something broken, then he can simply click to go back to the homepage.
+![Feature 7](documentation/404.png)
+
 ### Future Improvements
 - Add a leaderboard with highest scores
 - Submit form with the names of the players
@@ -88,7 +91,7 @@ No errors or warnings were found when passing through the official W3C validator
 - For the index.html check <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Findex.html" target="_blank">here!</a>
 - For the game.html check <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Fgame.html" target="_blank">here!</a>
 - For the CSS jigsaw validator check <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">here!</a>
-- For the JavaScript I used the <a href="https://jshint.com/" target="_blank">JSint in es6</a>tool which shows error less result (only a few warnings)
+- For the JavaScript I used the <a href="https://jshint.com/" target="_blank">JSint in es6</a> tool which shows error less result (only a few warnings)
 
 # Deployment
 # Credits
