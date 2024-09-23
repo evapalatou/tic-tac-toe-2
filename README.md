@@ -93,6 +93,23 @@ No errors or warnings were found when passing through the official W3C validator
 - For the CSS jigsaw validator check <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">here!</a>
 - For the JavaScript I used the <a href="https://jshint.com/" target="_blank">JSint in es6</a> tool which shows error less result (only a few warnings)
 
+### Features Testing
+
+| Feature | Test case | Outcome |
+| --- | --- | --- |
+| Welcome Page | Click on the 'Start Game' button | User is brought to the Game Page | 
+| Modal Window | Click on the 'X' icon | The user can see the gameboard | 
+| Modal Window | Click on the 'Start Game' button | The user can see the gameboard | 
+| Logo | Click on the 'Tic Tac Toe' logo | The user is redirected to the welcome page (index.html) | 
+| Game Board | Click on an empty cell at the grid | The user marks the area with the sign X or O | 
+| Game Board Button | Click on the 'Refresh' button | The user erases the grid from marks after a round is finished |
+| Game Board Button | Click on the 'New Board' button | The user starts a new game and scores are set to 0 | 
+| Game Board Button | Click on the audio icon | The user activates the sound | 
+| Game Board Button | Click on the audio icon | The user de-activates the sound | 
+| Footer Linkedin | Click on the Linkedin icon | The user is redirected to the Linkedin page |
+| Footer Github | Click on the Github icon | The user is redirected to the Github page |
+| Error Page | Click on something that is broken | The user views the 404.html page and has the option to go back to the Welcome Page |
+
 # Deployment
 # Credits
 
