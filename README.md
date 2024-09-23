@@ -65,6 +65,7 @@ The footer feature which includes information about the creator of the game and 
 - Am I Responsive Used for checking the responsiveness of the website.
 - Lighthouse Used for checking the score for the page through Google Chrome's dev tools on incognito mode
 - Browserling online cross-browser testing
+- Responsinator.com for checking the responsiveness of the website
 
 # Testing 
 ### Browser Compatibility
@@ -80,12 +81,14 @@ Opera
 ### Responsiveness
 The website was checked both by devtools implemented in Chrome browser and the Responsinator Testing Tool (source: http://www.responsinator.com/)
 - For the index.html page check <a href="http://www.responsinator.com/?url=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2F" target="_blank">here!</a>
-- for the game.html page check <a href="http://www.responsinator.com/?url=evapalatou.github.io%2Ftic-tac-toe-2%2Fgame.html" target="_blank">here!</a>
+- For the game.html page check <a href="http://www.responsinator.com/?url=evapalatou.github.io%2Ftic-tac-toe-2%2Fgame.html" target="_blank">here!</a>
 
 ### Code Validation
 No errors or warnings were found when passing through the official W3C validator (HTML and CSS)
 - For the index.html check <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Findex.html" target="_blank">here!</a>
 - For the game.html check <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Fgame.html" target="_blank">here!</a>
+- For the CSS jigsaw validator check <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fevapalatou.github.io%2Ftic-tac-toe-2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">here!</a>
+- For the JavaScript I used the <a href="https://jshint.com/" target="_blank">JSint in es6</a>tool which shows error less result (only a few warnings)
 
 # Deployment
 # Credits
