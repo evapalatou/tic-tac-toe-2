@@ -86,7 +86,7 @@ The website was tested on the following browsers: Chrome, Firefox, Opera
 
 Chrome
 ![Chrome](documentation/browser-chrome.png)
-Safari
+Firefox
 ![Firefox](documentation/browser-firefox.png)
 Opera
 ![Opera](documentation/browser-opera.png)
